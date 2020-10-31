@@ -1,0 +1,48 @@
+#+TITLE: Vim-workman
+#+DESCRIPTION: Workman-bindings for vim.
+
+This plugin is much simpler than [[https://github.com/nicwest/vim-workman][nicwest/vim-workman]], which is maps keyboard layouts between qwerty and workman for normal mode, insert mode or both.
+The aim of this plugin is to rearrange only the movement keys (h,j,k,l for qwerty) in normal mode.
+
+* Table of Contents :toc:
+- [[#installation][Installation]]
+  - [[#using-vim-plug][Using vim-plug]]
+- [[#usage][Usage]]
+- [[#bindings][Bindings]]
+  - [[#movement][Movement]]
+  - [[#rearranging-other-keys][Rearranging other keys]]
+- [[#credits][Credits]]
+
+* Installation
+** Using vim-plug
+#+BEGIN_SRC
+call plug#begin('/path/to/plugin/dir')
+	Plug 'ajzcole/vim-workman'
+call plug#end()
+#+END_SRC
+
+* Usage
+When installed, the function will automatically activate the bindings.
+The following functions can be used to enable/disable them in the editor:
+#+BEGIN_SRC
+WorkmanLayout()
+WorkmanLayoutOff()
+ToggleWorkmanLayout()
+#+END_SRC
+
+* Bindings
+[[./workman-layout.png]]
+** Movement
+- =y= for left
+- =n= for down
+- =e= for up
+- =o= for right
+** Rearranging other keys
+- =h= for next end of word (instead of =e=)
+- =j= for next search (instead of =n=)
+- =k= for copy/yank (instead of =y=)
+- =l= for new line (instead of =o=)
+
+* Credits
+- Code for the plugin is a huge ripoff of Luke Smith's [[https://github.com/LukeSmithxyz/vimling][vimling]] plugin.
+- The workman keyboard layout was originally designed by OJ Bucao (see [[https://workmanlayout.org]])
