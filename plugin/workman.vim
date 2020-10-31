@@ -13,17 +13,16 @@ endfunction
 function! WorkmanLayout()
 	let g:WorkmanLayout=1
 	" Mapping the movement keys
-	nnoremap y h
-	nnoremap n j
-	nnoremap e k
-	nnoremap o l
+	nnoremap y <left>
+	nnoremap n <down>
+	nnoremap e <up>
+	nnoremap o <right>
 	" Mapping other rearrangements
 	nnoremap h e
 	nnoremap j n
 	nnoremap k y
 	nnoremap l o
 endfunction
-
 
 function! WorkmanLayoutOff()
 	let g:WorkmanLayout=0
