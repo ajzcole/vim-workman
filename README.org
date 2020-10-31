@@ -1,5 +1,5 @@
 #+TITLE: Vim-workman
-#+DESCRIPTION: Workman-bindings for vim.
+#+DESCRIPTION: Workman bindings for vim.
 
 This plugin is much simpler than [[https://github.com/nicwest/vim-workman][nicwest/vim-workman]], which is maps keyboard layouts between qwerty and workman for normal mode, insert mode or both.
 The aim of this plugin is to rearrange only the movement keys (h,j,k,l for qwerty) in normal mode.
@@ -22,7 +22,7 @@ call plug#end()
 #+END_SRC
 
 * Usage
-When installed, the function will automatically activate the bindings.
+When installed, the plugin will automatically activate the bindings.
 The following functions can be used to enable/disable them in the editor:
 #+BEGIN_SRC
 WorkmanLayout()
