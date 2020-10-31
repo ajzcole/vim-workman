@@ -17,11 +17,19 @@ function! WorkmanLayout()
 	nnoremap n <down>
 	nnoremap e <up>
 	nnoremap o <right>
+	cnoremap y <left>
+	cnoremap n <down>
+	cnoremap e <up>
+	cnoremap o <right>
 	" Mapping other rearrangements
 	nnoremap h e
 	nnoremap j n
 	nnoremap k y
 	nnoremap l o
+	cnoremap h e
+	cnoremap j n
+	cnoremap k y
+	cnoremap l o
 endfunction
 
 function! WorkmanLayoutOff()
@@ -31,11 +39,19 @@ function! WorkmanLayoutOff()
 	nunmap n
 	nunmap e
 	nunmap o
+	cunmap y
+	cunmap n
+	cunmap e
+	cunmap o
 	" Unmapping other rearrangements
 	nunmap h
 	nunmap j
 	nunmap k
 	nunmap l
+	cunmap h
+	cunmap j
+	cunmap k
+	cunmap l
 endfunction
 
 call WorkmanLayout()
