@@ -5,7 +5,6 @@ This plugin is much simpler than [[https://github.com/nicwest/vim-workman][nicwe
 The aim of this plugin is to rearrange only the movement keys (h,j,k,l for qwerty) in normal mode.
 
 * Table of Contents :toc:
-- [[#why-this-plugin-does-not-work][Why This Plugin Does Not Work]]
 - [[#installation][Installation]]
   - [[#using-vim-plug][Using vim-plug]]
 - [[#usage][Usage]]
@@ -13,17 +12,6 @@ The aim of this plugin is to rearrange only the movement keys (h,j,k,l for qwert
   - [[#movement][Movement]]
   - [[#rearranging-other-keys][Rearranging other keys]]
 - [[#credits][Credits]]
-
-* Why This Plugin Does Not Work
-For whatever reason, rebinding =y= as a direction key is a massive pain. The other three work fine, though.
-
-What happens is that the initial press of the =y= key causes Neovim (I haven't triend in regular Vim) to wait for another key press, as if I have a binding for a sequence of keys beginning with =y=.
-Hitting =y= again then moves cursor to the left.
-Subsequent uses of the =y= key work as intended. It's only the initial press that is buggy.
-
-If =y= is hit multiple times, and then =o= pressed to go the right (or just any other key at all), hitting =y= again will result in the behaviour described above.
-
-Any ideas as to why or how to fix are appreciated.
 
 * Installation
 ** Using vim-plug
