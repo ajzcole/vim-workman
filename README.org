@@ -44,5 +44,5 @@ ToggleWorkmanLayout()
 - =l= for new line (instead of =o=)
 
 * Credits
-- Code for the plugin is a huge ripoff of Luke Smith's [[https://github.com/LukeSmithxyz/vimling][vimling]] plugin.
+- Code for the plugin is a bit of a ripoff of Luke Smith's [[https://github.com/LukeSmithxyz/vimling][vimling]] plugin.
 - The workman keyboard layout was originally designed by OJ Bucao (see [[https://workmanlayout.org]])
