@@ -13,23 +13,23 @@ endfunction
 function! WorkmanLayout()
 	let g:WorkmanLayout=1
 	" Mapping the movement keys
-	nnoremap <nowait> y h
-	nnoremap <nowait> n j
-	nnoremap <nowait> e k
-	nnoremap <nowait> o l
-	onoremap <nowait> y h
-	onoremap <nowait> n j
-	onoremap <nowait> e k
-	onoremap <nowait> o l
+	nnoremap <nowait> <buffer> y h
+	nnoremap <nowait> <buffer> n j
+	nnoremap <nowait> <buffer> e k
+	nnoremap <nowait> <buffer> o l
+	onoremap <nowait> <buffer> y h
+	onoremap <nowait> <buffer> n j
+	onoremap <nowait> <buffer> e k
+	onoremap <nowait> <buffer> o l
 	" Mapping other rearrangements
-	nnoremap <nowait> h e
-	nnoremap <nowait> j n
-	nnoremap <nowait> k y
-	nnoremap <nowait> l o
-	onoremap <nowait> h e
-	onoremap <nowait> j n
-	onoremap <nowait> k y
-	onoremap <nowait> l o
+	nnoremap <nowait> <buffer> h e
+	nnoremap <nowait> <buffer> j n
+	nnoremap <nowait> <buffer> k y
+	nnoremap <nowait> <buffer> l o
+	onoremap <nowait> <buffer> h e
+	onoremap <nowait> <buffer> j n
+	onoremap <nowait> <buffer> k y
+	onoremap <nowait> <buffer> l o
 endfunction
 
 function! WorkmanLayoutOff()
