@@ -35,23 +35,23 @@ endfunction
 function! WorkmanLayoutOff()
 	let g:WorkmanLayout=0
 	" Unmapping the movement keys
-	nunmap y
-	nunmap n
-	nunmap e
-	nunmap o
-	ounmap y
-	ounmap n
-	ounmap e
-	ounmap o
+	nunmap <buffer> y
+	nunmap <buffer> n
+	nunmap <buffer> e
+	nunmap <buffer> o
+	ounmap <buffer> y
+	ounmap <buffer> n
+	ounmap <buffer> e
+	ounmap <buffer> o
 	" Unmapping other rearrangements
-	nunmap h
-	nunmap j
-	nunmap k
-	nunmap l
-	ounmap h
-	ounmap j
-	ounmap k
-	ounmap l
+	nunmap <buffer> h
+	nunmap <buffer> j
+	nunmap <buffer> k
+	nunmap <buffer> l
+	ounmap <buffer> h
+	ounmap <buffer> j
+	ounmap <buffer> k
+	ounmap <buffer> l
 endfunction
 
 call WorkmanLayout()
